@@ -1,0 +1,105 @@
+:root {
+    --vermelho:#E50914;/*CRIANDO UMA VARIÁVEL*/
+    --preta:#141414;
+    --branco:cornsilk;
+}
+
+/*ELEMENTOS PRINCIPAIS*/
+
+body {
+    background: var(--preta);/*USANDO A VARIÁVEL*/
+    font-family: 'Times New Roman', Times, serif;/*ALTERANDO A FONTE*/
+    color: white;
+}
+
+header .container {/*RESET DO CONTAINER PARA ALINHAÇÃO*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    color: var(--vermelho);
+    font-family: 'Aril Black';/*ADICIONANDO UMA FONTE*/
+    text-align: left;/*ALINHANDO O TEXTO A ESQUERDA*/
+    padding: 10px;/*ADICIONANDO UM ESPAÇAMENTO EM TODOS OS LADOS*/
+    font-size: 40px;
+    
+}
+
+header nav a{
+    text-decoration: none;/*RETIRANDO O EFEITO DO TEXTO DE NAVEGAÇÃO*/
+    color: var(--branco);
+    margin-left: 15px;/*COLOCANDO ESPAÇAMENTO A ESQUERDA*/
+    margin-right: 15px;/*COLOCANDO ESPAÇAMENTO A DIREITA*/
+}
+
+header nav a:hover {/*ALTERANDO A COR QUANDO COLOCAR O MOUSE EM CIMA*/
+    color: var(--vermelho);
+}
+
+/*CONTEUDO DOS FILMES*/
+.principal {
+    font-size: 15px;/*ALTERANDO O TAMANHO DA FONTE*/
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url(../imagens/dr-stone.webp);/*ADICIONANDO A IMAGEM E ADICIONANDO UMA CAMADA ESCURA SOBRE A IMAGEM*/
+    
+    height: 400px;/*DANDO O TAMANHO DA DIV PRINCIPAL*/
+    background-size: cover;/*ESPECIFICA O TAMANHO DO BACKGROUND*/
+
+    display: flex;/*JOGA OS ELEMENTOS EM LINHA*/
+    flex-direction: column;/*ALTERANDO O ELEMENTO PARA COLUNA*/
+    justify-content: center;/*CENTRALIZANDO NO MEIO DA COLUNA*/
+    align-items: flex-start;/*OS ELEMENTOS IRÃO COMEÇAR DA ESQUERDA*/
+}
+
+.principal .sinopse{
+    margin-top: 10px;
+    margin-bottom: 90px;/*DANDO ESPAÇAMENTO ABAIXO DA SINOPSE*/
+}
+
+.principal .titulo {
+    margin-top: 10%;
+    font-size: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao {
+    background-color: rgba(0, 0, 0, .50);
+    border: none;
+    color: whitesmoke;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;/*PARA ALTERAR O CURSOR INFORMANDO QUE É UM BOTÃO CLICKAVEL*/
+    transition: .5s ease all;
+}
+
+.botao:hover {/*EFEITO DE QUANDO O MOUSE PASSAR EM CIMA DO BUTTON*/
+    background-color: whitesmoke;
+    color: var(--preta);
+}
+
+.botao i {
+    margin-right: 8px;
+}
+
+.container {
+    margin-left: 2%;
+}
+
+.principal .container {
+    width: 70%;/*LIMITA O TEXTO A 70% DA TELA DA CONTAINER PRINCIPAL*/
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrossel {
+    margin-top: 25px;
+}
