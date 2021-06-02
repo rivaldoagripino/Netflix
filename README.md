@@ -1,2 +1,2 @@
 # Netflix
-Recriado a página da Netflix estilizando com animes
+Recriado a página da Netflix estilizado ao estilo dos animes!
